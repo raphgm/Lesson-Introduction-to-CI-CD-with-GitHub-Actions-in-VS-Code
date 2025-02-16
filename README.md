@@ -154,4 +154,3 @@ Check the Actions tab again. After the workflow runs, your site will be live at:
 - **Workflow Errors**: Check logs in the Actions tab.
 - **YAML Syntax**: Use VS Code’s YAML extension for validation. Microsoft's learn-yaml extension would be perfect for this.
 - **Paths**: Ensure file paths in workflows match your project structure.
-
