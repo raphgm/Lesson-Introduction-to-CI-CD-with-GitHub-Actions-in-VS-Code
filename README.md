@@ -8,7 +8,7 @@ Learn to set up a basic CI/CD pipeline using GitHub Actions directly from VS Cod
 - **CD (Continuous Delivery/Deployment)**: Automatically deploy code after passing tests.
 - **GitHub Actions**: A tool to automate workflows (CI/CD) directly in your GitHub repository.
 
-## 2. Setup Your Project
+## Setup Your Project
 
 ### Step 1: Create a Project in VS Code
 
@@ -25,7 +25,7 @@ Add a simple file (e.g., `index.html` you can add your resume in index.html and 
 </html>
 ```
 
-### Initialize Git & Connect to GitHub
+### 2. Initialize Git & Connect to GitHub
 
 
 Create a new GitHub repository (e.g., `github-actions-demo`).
@@ -37,7 +37,7 @@ git remote add origin YOUR_GITHUB_REPO_URL
 git push -u origin main
 ```
 
-## Create a CI Workflow
+## 3. Create a CI Workflow
 
 ### Add a GitHub Actions Workflow File
 
@@ -63,7 +63,7 @@ jobs:
         run: echo "Running tests... Success!"
 ```
 
-### Step 2: Commit and Push
+### 4.: Commit and Push
 
 Commit the workflow file:
 
@@ -73,17 +73,17 @@ git commit -m "Add CI workflow"
 git push origin main
 ```
 
-###  Check GitHub Actions
+### 5.  Check GitHub Actions
 
 Go to your GitHub repository → Actions tab.
 
 You’ll see the workflow running. Click to view logs and confirm the simulated test passes.
 
-## Add CD (Deployment)
+## 6. Add CD (Deployment)
 
 Let’s deploy the `index.html` to GitHub Pages.
 
-### Update the Workflow
+###7.  Update the Workflow
 
 Modify `ci.yml` to add a deployment job:
 
@@ -117,13 +117,13 @@ jobs:
         uses: actions/deploy-pages@v3
 ```
 
-### Step 2: Enable GitHub Pages
+### 8. Enable GitHub Pages
 
 Go to your GitHub repo → Settings → Pages.
 
 Set Source to GitHub Actions.
 
-### Push Changes
+### 9. Push Changes
 
 Commit and push the updated workflow:
 
@@ -136,13 +136,13 @@ git push origin main
 Check the Actions tab again. After the workflow runs, your site will be live at:
 `https://YOUR_GITHUB_USERNAME.github.io/REPO_NAME/`.
 
-## Best Practices
+## 10. Best Practices
 
 - **Cache Dependencies**: Speed up workflows by caching tools (e.g., npm packages).
 - **Use Secrets**: Store sensitive data (e.g., API keys) in GitHub Secrets.
 - **Matrix Testing**: Test across multiple OS/platforms.
 
-## Troubleshooting
+## 11. Troubleshooting
 
 - **Workflow Errors**: Check logs in the Actions tab.
 - **YAML Syntax**: Use VS Code’s YAML extension for validation. Microsoft's learn-yaml extension would be perfect for this
