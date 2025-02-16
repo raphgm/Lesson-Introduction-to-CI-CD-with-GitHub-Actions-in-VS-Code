@@ -10,7 +10,7 @@ Learn to set up a basic CI/CD pipeline using GitHub Actions directly from VS Cod
 
 ## Setup Your Project
 
-### Step 1: Create a Project in VS Code
+### Create a Project in VS Code
 
 Open VS Code and create a new folder (e.g., `github-actions-demo`).
 
